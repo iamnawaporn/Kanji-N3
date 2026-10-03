@@ -7,7 +7,7 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<meta name="theme-color" content="#2e7d32"><title>แฟลชการ์ดคำศัพท์ญี่ปุ่น</title><style>
+<meta name="theme-color" content="#2e7d32"><title>แฟลชการ์ดและแบบทดสอบคำศัพท์ญี่ปุ่น</title><style>
 :root{--bg:#f5f7f5;--card:#fff;--text:#18211b;--muted:#68736b;--green:#2e7d32;--green2:#e8f5e9;--red:#c62828;--red2:#ffebee;--line:#dfe6df;--accent:#4caf50;--shadow:0 10px 30px rgba(23,48,28,.10)}
 *{box-sizing:border-box}html{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,"Leelawadee UI",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;min-height:100vh}.app{max-width:720px;margin:auto;padding:16px 14px 40px}.top{position:sticky;top:0;z-index:10;background:rgba(245,247,245,.94);backdrop-filter:blur(10px);padding:8px 0 12px}.title{font-size:1.25rem;font-weight:800;margin:2px 0 8px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;font-size:.78rem}.stat b{display:block;font-size:1.05rem}.progress{height:8px;background:#e3e9e3;border-radius:10px;overflow:hidden;margin-top:8px}.progress>div{height:100%;background:var(--accent);width:0;transition:.25s}.controls{display:grid;grid-template-columns:1fr 150px 170px;gap:8px;margin:12px 0 8px}.filter-label{font-size:.72rem;color:var(--muted);margin:0 0 3px 3px}.control-box{min-width:0}.search{width:100%;border:1px solid var(--line);background:white;border-radius:12px;padding:11px 12px;font-size:16px}.select,.btn{border:1px solid var(--line);background:white;border-radius:12px;padding:10px 12px;font-size:14px;color:var(--text)}
 .multi{position:relative}.multi-toggle{width:100%;min-height:42px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 34px 9px 11px;font-size:14px;color:var(--text);text-align:left;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.multi-toggle:after{content:"▾";position:absolute;right:11px;top:50%;transform:translateY(-50%);color:var(--muted)}.multi.open .multi-toggle:after{content:"▴"}.multi-panel{display:none;position:absolute;z-index:30;top:calc(100% + 5px);left:0;right:0;max-height:300px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.16);padding:8px}.multi.open .multi-panel{display:block}.multi-actions{display:flex;gap:6px;position:sticky;top:-8px;background:#fff;padding:4px 0 8px;z-index:1}.mini-btn{flex:1;border:1px solid var(--line);border-radius:9px;background:#f8faf8;padding:7px 5px;font-size:12px}.multi-option{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:9px;font-size:14px}.multi-option:hover{background:#f3f7f3}.multi-option input{width:18px;height:18px;accent-color:var(--green);flex:0 0 auto}.selection-note{font-size:.7rem;color:var(--muted);margin-top:3px;padding-left:3px}.row{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px}.chip{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px}.chip.active{background:#1f5f2a;color:#fff;border-color:#1f5f2a}.card-wrap{perspective:1200px;margin-top:8px}.card{height:340px;position:relative;transform-style:preserve-3d;transition:transform .35s;cursor:pointer}.card.flipped{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:26px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.back{transform:rotateY(180deg)}.term{font-size:clamp(2.3rem,10vw,4rem);font-weight:800;line-height:1.25;word-break:break-word}.hint{position:absolute;bottom:18px;color:var(--muted);font-size:.8rem}.reading{font-size:1.7rem;font-weight:700;margin-bottom:10px}.front .speak-btn{margin-top:18px}.speak-btn{border:1px solid var(--line);background:#f4f8f4;color:var(--text);border-radius:999px;padding:10px 16px;font-size:.95rem;font-weight:700;margin-bottom:12px;touch-action:manipulation}.speak-btn:active{transform:scale(.98)}.thai{font-size:1.2rem;line-height:1.55}.meta{margin-top:18px;color:var(--muted);font-size:.82rem}.status-badge{position:absolute;top:16px;right:16px;font-size:.78rem;padding:6px 9px;border-radius:999px;background:#f1f3f1;color:var(--muted)}.status-badge.known{background:var(--green2);color:var(--green)}.status-badge.missed{background:var(--red2);color:var(--red)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 10px}.action{border:0;border-radius:15px;padding:15px 10px;font-size:1rem;font-weight:800}.missed{background:var(--red2);color:var(--red)}.known{background:var(--green2);color:var(--green)}.nav{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center}.nav .btn:first-child{text-align:left}.nav .btn:last-child{text-align:right}.counter{text-align:center;color:var(--muted);font-size:.9rem;min-width:90px}.tools{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}.empty{background:white;border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);display:none}.foot{text-align:center;color:var(--muted);font-size:.78rem;margin-top:18px}.small{font-size:.78rem;color:var(--muted)}
@@ -29,7 +29,7 @@ button,.btn,.chip,.action,.multi-toggle,.mini-btn{min-height:44px;touch-action:m
 .iphone-help{margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;font-size:.82rem;line-height:1.55;color:var(--muted)}
 .iphone-help b{color:var(--text)}
 .install-btn{width:100%;margin-top:10px;background:#eef5ff;border:1px solid #cfdff7;border-radius:14px;padding:12px;font-size:14px;font-weight:700;color:#24548a}
-.auto-audio{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 4px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:11px 13px}.auto-audio-text{min-width:0}.auto-audio-title{font-size:.92rem;font-weight:800}.auto-audio-note{font-size:.72rem;color:var(--muted);margin-top:2px}.switch{position:relative;display:inline-block;width:54px;height:32px;flex:0 0 auto}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;inset:0;background:#cfd7d0;border-radius:999px;transition:.2s}.slider:before{content:"";position:absolute;height:26px;width:26px;left:3px;top:3px;background:white;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.18);transition:.2s}.switch input:checked+.slider{background:var(--green)}.switch input:checked+.slider:before{transform:translateX(22px)}
+.auto-audio{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 4px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:11px 13px}.voice-settings{display:grid;grid-template-columns:1.35fr .65fr;gap:10px;margin:10px 0 4px}.voice-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px}.voice-select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;font:inherit}.voice-label{font-size:.78rem;color:var(--muted);font-weight:700;margin-bottom:6px}.voice-note{font-size:.72rem;color:var(--muted);margin-top:5px}.auto-audio-text{min-width:0}.auto-audio-title{font-size:.92rem;font-weight:800}.auto-audio-note{font-size:.72rem;color:var(--muted);margin-top:2px}.switch{position:relative;display:inline-block;width:54px;height:32px;flex:0 0 auto}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;inset:0;background:#cfd7d0;border-radius:999px;transition:.2s}.slider:before{content:"";position:absolute;height:26px;width:26px;left:3px;top:3px;background:white;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.18);transition:.2s}.switch input:checked+.slider{background:var(--green)}.switch input:checked+.slider:before{transform:translateX(22px)}
 .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);background:rgba(18,24,20,.94);color:#fff;padding:10px 14px;border-radius:999px;font-size:13px;z-index:100;opacity:0;pointer-events:none;transition:.2s;max-width:88vw;text-align:center}.toast.show{opacity:1}
 @media (max-width:520px){
   .app{padding-left:12px;padding-right:12px}
@@ -44,17 +44,72 @@ button,.btn,.chip,.action,.multi-toggle,.mini-btn{min-height:44px;touch-action:m
   .actions{position:sticky;bottom:calc(6px + env(safe-area-inset-bottom));}
 }
 
+
+/* Quiz modes */
+.study-mode-box{margin:12px 0 8px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px}
+.study-mode-title{font-size:.78rem;color:var(--muted);font-weight:800;margin:0 0 8px 2px}
+.study-mode-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.study-mode-btn{border:1px solid var(--line);background:#f8faf8;color:var(--text);border-radius:12px;padding:10px 6px;font-size:.82rem;font-weight:800;min-height:44px}
+.study-mode-btn.active{background:#1f5f2a;color:#fff;border-color:#1f5f2a}
+.quiz-panel{display:none;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px 16px;margin-top:8px;text-align:center;min-height:315px;align-items:center;justify-content:center;flex-direction:column}
+.quiz-panel.active{display:flex}
+.quiz-term{font-size:clamp(2.2rem,11vw,3.8rem);font-weight:800;line-height:1.25;margin-bottom:10px;word-break:break-word}
+.quiz-thai{font-size:.92rem;color:var(--muted);margin-bottom:18px;line-height:1.4}
+.quiz-input{width:100%;max-width:430px;border:2px solid var(--line);border-radius:14px;padding:13px 14px;font-size:20px;text-align:center;background:#fff;color:var(--text);outline:none}
+.quiz-input:focus{border-color:#77a97c;box-shadow:0 0 0 3px rgba(76,175,80,.12)}
+.quiz-submit{margin-top:10px;width:100%;max-width:430px;border:0;border-radius:14px;background:#1f5f2a;color:#fff;padding:13px 12px;font-size:1rem;font-weight:800;min-height:46px}
+.quiz-feedback{margin-top:14px;width:100%;max-width:500px;border-radius:14px;padding:11px 12px;font-size:.94rem;line-height:1.5;display:none}
+.quiz-feedback.show{display:block}.quiz-feedback.correct{background:var(--green2);color:#1b6b25}.quiz-feedback.wrong{background:var(--red2);color:#a92323}
+.quiz-answer{font-size:1.2rem;font-weight:800;margin-top:4px;color:var(--text)}
+.quiz-next{margin-top:10px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 18px;font-weight:800;min-height:44px;display:none}
+.quiz-next.show{display:inline-block}
+.mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:520px;margin-top:6px}
+.mc-option{border:1px solid var(--line);background:#f8faf8;border-radius:14px;padding:14px 10px;min-height:64px;font-size:1.05rem;font-weight:750;color:var(--text);line-height:1.3}
+.mc-option:disabled{opacity:1}.mc-option.correct{background:var(--green2);border-color:#7cbd82;color:#1b6b25}.mc-option.wrong{background:var(--red2);border-color:#e1a0a0;color:#a92323}
+.quiz-help{font-size:.74rem;color:var(--muted);margin-top:9px;line-height:1.4}
+.quiz-score{display:flex;gap:8px;justify-content:center;margin-top:10px;font-size:.78rem;color:var(--muted)}
+.quiz-score span{background:#f4f7f4;border:1px solid var(--line);border-radius:999px;padding:5px 9px}
+@media(max-width:520px){.study-mode-tabs{grid-template-columns:1fr}.study-mode-btn{min-height:42px}.mc-grid{grid-template-columns:1fr}.quiz-panel{min-height:300px}.quiz-input{font-size:18px}}
+
 </style></head><body><main class="app">
 <div class="top"><div class="title">🇯🇵 แฟลชการ์ดคำศัพท์ญี่ปุ่น</div><div class="stats"><div class="stat"><b id="knownCount">0</b>จำได้แล้ว</div><div class="stat"><b id="missedCount">0</b>ยังจำไม่ได้</div><div class="stat"><b id="newCount">0</b>ยังไม่ทบทวน</div></div><div class="progress"><div id="progressBar"></div></div></div>
 <div class="controls"><div class="control-box"><div class="filter-label">ค้นหาคำศัพท์</div><input id="search" class="search" placeholder="คันจิ / ฟุริกานะ / คำแปล"></div><div class="control-box"><div class="filter-label">หน้าเนื้อหา (เลือกได้หลายหน้า)</div><div id="pageMulti" class="multi"><button id="pageToggle" type="button" class="multi-toggle">ทุกหน้า</button><div id="pagePanel" class="multi-panel"></div></div><div id="pageNote" class="selection-note">ทุกหน้า</div></div><div class="control-box"><div class="filter-label">คันจิกลุ่ม (เลือกได้หลายกลุ่ม)</div><div id="groupMulti" class="multi"><button id="groupToggle" type="button" class="multi-toggle">ทุกคันจิกลุ่ม</button><div id="groupPanel" class="multi-panel"></div></div><div id="groupNote" class="selection-note">ทุกคันจิกลุ่ม</div></div></div>
 <div class="row"><button class="chip active" data-mode="all">ทั้งหมด</button><button class="chip" data-mode="new">ยังไม่ทบทวน</button><button class="chip" data-mode="missed">ยังจำไม่ได้</button><button class="chip" data-mode="known">จำได้แล้ว</button></div>
-<div class="auto-audio"><div class="auto-audio-text"><div class="auto-audio-title">🔊 เล่นเสียงอัตโนมัติ</div><div class="auto-audio-note">อ่านคำศัพท์ทุกครั้งเมื่อเปลี่ยนการ์ด</div></div><label class="switch" aria-label="เปิดหรือปิดเสียงอัตโนมัติ"><input id="autoAudio" type="checkbox"><span class="slider"></span></label></div>
+<div class="auto-audio"><div class="auto-audio-text"><div class="auto-audio-title">🔊 เล่นเสียงอัตโนมัติ</div><div class="auto-audio-note">อ่านคำศัพท์ทุกครั้งเมื่อเปลี่ยนการ์ด</div></div><label class="switch" aria-label="เปิดหรือปิดเสียงอัตโนมัติ"><input id="autoAudio" type="checkbox"><span class="slider"></span></label></div><div class="voice-settings"><div class="voice-box"><div class="voice-label">เสียงภาษาญี่ปุ่น</div><select id="voiceSelect" class="voice-select"><option value="auto">อัตโนมัติ (เสียงญี่ปุ่นที่เป็นธรรมชาติที่สุด)</option></select><div class="voice-note">ถ้ามี Enhanced / Premium voice ใน iPhone แอปจะเลือกให้ก่อน</div></div><div class="voice-box"><div class="voice-label">ความเร็วเสียง</div><select id="rateSelect" class="voice-select"><option value="0.74">ช้า</option><option value="0.88">ฝึกฟัง</option><option value="0.96" selected>ธรรมชาติ</option><option value="1.05">เร็ว</option></select><div class="voice-note">แนะนำ “ธรรมชาติ”</div></div></div>
+
+<div class="study-mode-box">
+  <div class="study-mode-title">โหมดฝึก</div>
+  <div class="study-mode-tabs">
+    <button type="button" class="study-mode-btn active" data-study-mode="flash">🃏 แฟลชการ์ด</button>
+    <button type="button" class="study-mode-btn" data-study-mode="type">⌨️ พิมพ์ฟุริกานะ</button>
+    <button type="button" class="study-mode-btn" data-study-mode="choice">④ เลือกฟุริกานะ</button>
+  </div>
+  <div class="quiz-help">โหมดทดสอบจะยังไม่เล่นเสียงอัตโนมัติก่อนตอบ เพื่อไม่เฉลยคำอ่าน • ตอบถูก = จำได้แล้ว, ตอบผิด = ยังจำไม่ได้</div>
+</div>
+
 <section id="study"><div class="card-wrap"><div id="flash" class="card"><div class="face front"><span id="badge" class="status-badge"></span><div id="term" class="term"></div><button id="speakFrontBtn" class="speak-btn" type="button" aria-label="ฟังคำอ่านภาษาญี่ปุ่น">🔊 ฟังคำอ่าน</button><div class="hint">กด 🔊 เพื่อฟัง • แตะการ์ดเพื่อดูคำอ่านและคำแปล</div></div><div class="face back"><div id="reading" class="reading"></div><button id="speakBtn" class="speak-btn" type="button" aria-label="ฟังคำอ่านภาษาญี่ปุ่น">🔊 ฟังคำอ่าน</button><div id="thai" class="thai"></div><div id="meta" class="meta"></div><div class="hint">แตะอีกครั้งเพื่อกลับด้านหน้า</div></div></div></div>
+<div id="typeQuiz" class="quiz-panel">
+  <div id="typeTerm" class="quiz-term"></div>
+  <div id="typeThai" class="quiz-thai"></div>
+  <input id="furiganaInput" class="quiz-input" type="text" lang="ja" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="พิมพ์ฟุริกานะ เช่น いっぱん">
+  <button id="checkTyped" class="quiz-submit" type="button">ตรวจคำตอบ</button>
+  <div id="typeFeedback" class="quiz-feedback"></div>
+  <button id="typeNext" class="quiz-next" type="button">คำถัดไป →</button>
+  <div id="typeScore" class="quiz-score"></div>
+</div>
+<div id="choiceQuiz" class="quiz-panel">
+  <div id="choiceTerm" class="quiz-term"></div>
+  <div id="choiceThai" class="quiz-thai"></div>
+  <div id="choiceOptions" class="mc-grid"></div>
+  <div id="choiceFeedback" class="quiz-feedback"></div>
+  <button id="choiceNext" class="quiz-next" type="button">คำถัดไป →</button>
+  <div id="choiceScore" class="quiz-score"></div>
+</div>
 <div class="actions"><button id="missedBtn" class="action missed">× ยังจำไม่ได้</button><button id="knownBtn" class="action known">✓ จำได้แล้ว</button></div>
 <div class="nav"><button id="prev" class="btn">← ก่อนหน้า</button><div id="counter" class="counter"></div><button id="next" class="btn">ถัดไป →</button></div></section>
 <div id="empty" class="empty">ไม่พบคำศัพท์ตามตัวกรองนี้</div>
 <div class="tools"><button id="shuffle" class="btn">🔀 สุ่มลำดับ</button><button id="export" class="btn">💾 สำรองความคืบหน้า</button><label class="btn" style="text-align:center;cursor:pointer">📥 นำเข้าความคืบหน้า<input id="importFile" type="file" accept="application/json" hidden></label><button id="reset" class="btn">↺ ล้างสถานะทั้งหมด</button></div>
-<div class="foot">ข้อมูลจากดัชนีหน้า 126–135 • เลือกหน้าเนื้อหาและคันจิกลุ่มได้หลายรายการ • 900 คำไม่ซ้ำ<br><span class="small">บน iPhone แนะนำให้เปิดผ่าน Safari และ Add to Home Screen • เปิดสวิตช์เสียงอัตโนมัติครั้งแรกด้วยการแตะ • สถานะจะบันทึกอัตโนมัติ</span></div>
+<div class="foot">ข้อมูลจากดัชนีหน้า 126–135 • 900 คำไม่ซ้ำ • มีแฟลชการ์ด + พิมพ์ฟุริกานะ + เลือกคำอ่าน 4 ตัวเลือก<br><span class="small">บน iPhone แนะนำให้เปิดผ่าน Safari และ Add to Home Screen • เปิดสวิตช์เสียงอัตโนมัติครั้งแรกด้วยการแตะ • สถานะจะบันทึกอัตโนมัติ</span></div>
 
 <div class="iphone-help"><b>📱 ใช้บน iPhone</b><br>เปิดลิงก์เว็บนี้ด้วย Safari แล้วแตะ <b>Share</b> → <b>Add to Home Screen</b> เพื่อใช้แบบแอปเต็มหน้าจอ ข้อมูล “จำได้แล้ว/ยังจำไม่ได้” จะถูกเก็บไว้ใน Safari ของเครื่องนี้</div>
 <button id="installHelp" class="install-btn" type="button">วิธีเพิ่มแอปไว้บนหน้าจอ iPhone</button>
@@ -65,10 +120,18 @@ const CARDS=[{"term":"一般","reading":"いっぱん","thai":"ทั่วไ�
 const STORE='jpFlashStatus_v1';
 let status={}; try{status=JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){status={}};
 const AUTO_AUDIO_STORE='jpFlashAutoAudio_v1';
+const VOICE_STORE='jpFlashVoice_v1';
+const RATE_STORE='jpFlashRate_v1';
 let autoAudio=false; try{autoAudio=localStorage.getItem(AUTO_AUDIO_STORE)==='1'}catch(e){autoAudio=false}
+let preferredVoice='auto'; try{preferredVoice=localStorage.getItem(VOICE_STORE)||'auto'}catch(e){}
+let speechRate=.96; try{speechRate=parseFloat(localStorage.getItem(RATE_STORE)||'.96')||.96}catch(e){}
 let autoSpeakTimer=null;
 let audioUnlocked=false;
 let mode='all', q='', selectedPages=[], selectedGroups=[], pos=0, order=[];
+let studyMode='flash';
+let quizAnswered=false;
+let choiceOptions=[];
+let quizStats={typeCorrect:0,typeWrong:0,choiceCorrect:0,choiceWrong:0};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function save(){try{localStorage.setItem(STORE,JSON.stringify(status));}catch(e){toast('บันทึกในเครื่องไม่ได้ กรุณาเปิดผ่าน Safari/เว็บไซต์')}}
@@ -88,7 +151,82 @@ function filtered(){return CARDS.filter(c=>{
 function rebuild(keepId){let arr=filtered(); order=arr.map(c=>c.id); if(keepId&&order.includes(keepId)) pos=order.indexOf(keepId); else pos=Math.min(pos,Math.max(0,order.length-1)); render();}
 function current(){let id=order[pos]; return CARDS.find(c=>c.id===id)}
 function stats(){let k=0,m=0,n=0; for(const c of CARDS){let s=state(c.id); if(s==='known')k++; else if(s==='missed')m++; else n++;} $('#knownCount').textContent=k; $('#missedCount').textContent=m; $('#newCount').textContent=n; $('#progressBar').style.width=((k/CARDS.length)*100).toFixed(1)+'%';}
-function render(){stats(); let c=current(); const empty=$('#empty'), wrap=$('#study'); if(!c){empty.style.display='block';wrap.style.display='none'; $('#counter').textContent='0 / 0'; return;} empty.style.display='none';wrap.style.display='block'; $('#flash').classList.remove('flipped'); $('#term').textContent=c.term; $('#reading').textContent=c.reading||'—'; $('#thai').textContent=c.thai||'—'; const pg=(c.indexPages||[]).join(', ')||'—'; const g=groupsForCard(c); $('#meta').textContent=`หน้าเนื้อหา: ${c.page||'—'} • คันจิกลุ่ม: ${(g.length?g:[c.group||'—']).join(' / ')} • หน้าดัชนี: ${pg}`; $('#counter').textContent=`${pos+1} / ${order.length}`; let st=state(c.id); const b=$('#badge'); b.className='status-badge '+(st==='known'?'known':st==='missed'?'missed':''); b.textContent=st==='known'?'✓ จำได้แล้ว':st==='missed'?'× ยังจำไม่ได้':'ยังไม่ทบทวน'; scheduleAutoSpeak();}
+
+function normalizeKana(v){
+ return String(v||'').trim().normalize('NFKC').replace(/\s+/g,'').replace(/[・･]/g,'').replace(/[〜~～○]/g,'').replace(/\/+/g,'／').replace(/[ァ-ヶ]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0x60));
+}
+function acceptedReadings(c){
+ const raw=String(c?.reading||'').trim();
+ if(!raw)return [];
+ const parts=raw.split(/[／/]/).map(normalizeKana).filter(Boolean);
+ const full=normalizeKana(raw.replace(/[／/]/g,''));
+ return [...new Set([...parts,full].filter(Boolean))];
+}
+function isTypedCorrect(c,val){const n=normalizeKana(val);return !!n&&acceptedReadings(c).includes(n)}
+function readingForChoice(c){return String(c?.reading||'').trim()||'—'}
+function levenshtein(a,b){
+ a=normalizeKana(a);b=normalizeKana(b);const m=a.length,n=b.length;const d=Array.from({length:m+1},()=>Array(n+1).fill(0));
+ for(let i=0;i<=m;i++)d[i][0]=i;for(let j=0;j<=n;j++)d[0][j]=j;
+ for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+ return d[m][n];
+}
+function similarChoices(c){
+ const target=readingForChoice(c), tn=normalizeKana(target);
+ const uniq=new Map();
+ for(const x of CARDS){const r=readingForChoice(x),rn=normalizeKana(r);if(!rn||rn===tn||uniq.has(rn))continue;uniq.set(rn,r)}
+ const ranked=[...uniq.entries()].map(([rn,r])=>{
+   let score=levenshtein(tn,rn)+Math.abs(tn.length-rn.length)*.35;
+   if(tn[0]&&rn[0]===tn[0])score-=.45;
+   if(tn.slice(-1)&&rn.slice(-1)===tn.slice(-1))score-=.18;
+   return {r,score};
+ }).sort((a,b)=>a.score-b.score);
+ const pool=ranked.slice(0,Math.min(16,ranked.length));
+ const picked=[];
+ while(picked.length<3&&pool.length){const cap=Math.min(6,pool.length);const i=Math.floor(Math.random()*cap);picked.push(pool.splice(i,1)[0].r)}
+ while(picked.length<3&&ranked[picked.length])picked.push(ranked[picked.length].r);
+ const arr=[target,...picked.slice(0,3)];for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr;
+}
+function setStatusFromQuiz(correct){const c=current();if(!c)return;status[c.id]=correct?'known':'missed';save();stats()}
+function quizScoreHtml(kind){const c=kind==='type'?quizStats.typeCorrect:quizStats.choiceCorrect,w=kind==='type'?quizStats.typeWrong:quizStats.choiceWrong,t=c+w;return `<span>✓ ถูก ${c}</span><span>× ผิด ${w}</span><span>ทั้งหมด ${t}</span>`}
+function resetQuizUI(){
+ quizAnswered=false;
+ const ti=$('#furiganaInput');if(ti){ti.value='';ti.disabled=false}
+ const tf=$('#typeFeedback');if(tf){tf.className='quiz-feedback';tf.innerHTML=''}
+ const tn=$('#typeNext');if(tn)tn.classList.remove('show');
+ const cf=$('#choiceFeedback');if(cf){cf.className='quiz-feedback';cf.innerHTML=''}
+ const cn=$('#choiceNext');if(cn)cn.classList.remove('show');
+}
+function renderTypeQuiz(c){
+ $('#typeTerm').textContent=c.term;$('#typeThai').textContent=c.thai||'';$('#typeScore').innerHTML=quizScoreHtml('type');
+ resetQuizUI();
+ setTimeout(()=>{if(studyMode==='type')$('#furiganaInput')?.focus({preventScroll:true})},80);
+}
+function renderChoiceQuiz(c){
+ $('#choiceTerm').textContent=c.term;$('#choiceThai').textContent=c.thai||'';$('#choiceScore').innerHTML=quizScoreHtml('choice');
+ resetQuizUI();choiceOptions=similarChoices(c);const box=$('#choiceOptions');box.innerHTML='';
+ choiceOptions.forEach((r,i)=>{const b=document.createElement('button');b.type='button';b.className='mc-option';b.dataset.reading=r;b.textContent=r;b.onclick=()=>answerChoice(b,r);box.appendChild(b)});
+}
+function showTypedResult(correct,c){
+ quizAnswered=true;setStatusFromQuiz(correct);if(correct)quizStats.typeCorrect++;else quizStats.typeWrong++;
+ const f=$('#typeFeedback');f.className='quiz-feedback show '+(correct?'correct':'wrong');
+ f.innerHTML=correct?`✓ ถูกต้อง — จำคำนี้ได้แล้ว<div class="quiz-answer">${esc(c.reading)}</div>`:`× ยังไม่ถูก — คำอ่านที่ถูกต้อง<div class="quiz-answer">${esc(c.reading)}</div>`;
+ $('#furiganaInput').disabled=true;$('#typeNext').classList.add('show');$('#typeScore').innerHTML=quizScoreHtml('type');
+ if('speechSynthesis' in window)setTimeout(()=>speakCurrent(),180);
+}
+function checkTypedAnswer(){if(quizAnswered)return;const c=current();if(!c)return;const val=$('#furiganaInput').value;if(!String(val).trim()){toast('พิมพ์ฟุริกานะก่อนตรวจคำตอบ');return}showTypedResult(isTypedCorrect(c,val),c)}
+function answerChoice(btn,reading){if(quizAnswered)return;const c=current();if(!c)return;quizAnswered=true;const correct=normalizeKana(reading)===normalizeKana(readingForChoice(c));setStatusFromQuiz(correct);if(correct)quizStats.choiceCorrect++;else quizStats.choiceWrong++;
+ document.querySelectorAll('#choiceOptions .mc-option').forEach(b=>{b.disabled=true;if(normalizeKana(b.dataset.reading)===normalizeKana(readingForChoice(c)))b.classList.add('correct')});if(!correct)btn.classList.add('wrong');
+ const f=$('#choiceFeedback');f.className='quiz-feedback show '+(correct?'correct':'wrong');f.innerHTML=correct?`✓ ถูกต้อง — จำคำนี้ได้แล้ว<div class="quiz-answer">${esc(c.reading)}</div>`:`× ยังไม่ถูก — คำอ่านที่ถูกต้อง<div class="quiz-answer">${esc(c.reading)}</div>`;
+ $('#choiceNext').classList.add('show');$('#choiceScore').innerHTML=quizScoreHtml('choice');if('speechSynthesis' in window)setTimeout(()=>speakCurrent(),180);
+}
+function setStudyMode(m){
+ studyMode=m;document.querySelectorAll('.study-mode-btn').forEach(b=>b.classList.toggle('active',b.dataset.studyMode===m));
+ const cw=document.querySelector('.card-wrap'),actions=document.querySelector('.actions');if(cw)cw.style.display=m==='flash'?'block':'none';if(actions)actions.style.display=m==='flash'?'grid':'none';
+ $('#typeQuiz').classList.toggle('active',m==='type');$('#choiceQuiz').classList.toggle('active',m==='choice');
+ render();
+}
+
+function render(){stats(); let c=current(); const empty=$('#empty'), wrap=$('#study'); if(!c){empty.style.display='block';wrap.style.display='none'; $('#counter').textContent='0 / 0'; return;} empty.style.display='none';wrap.style.display='block'; $('#flash').classList.remove('flipped'); $('#term').textContent=c.term; $('#reading').textContent=c.reading||'—'; $('#thai').textContent=c.thai||'—'; const pg=(c.indexPages||[]).join(', ')||'—'; const g=groupsForCard(c); $('#meta').textContent=`หน้าเนื้อหา: ${c.page||'—'} • คันจิกลุ่ม: ${(g.length?g:[c.group||'—']).join(' / ')} • หน้าดัชนี: ${pg}`; $('#counter').textContent=`${pos+1} / ${order.length}`; let st=state(c.id); const b=$('#badge'); b.className='status-badge '+(st==='known'?'known':st==='missed'?'missed':''); b.textContent=st==='known'?'✓ จำได้แล้ว':st==='missed'?'× ยังจำไม่ได้':'ยังไม่ทบทวน'; if(studyMode==='type')renderTypeQuiz(c); else if(studyMode==='choice')renderChoiceQuiz(c); else scheduleAutoSpeak();}
 function mark(s){let c=current(); if(!c)return; status[c.id]=s; save(); stats(); if(mode!=='all'){rebuild();}else{next();}}
 function next(){if(!order.length)return; pos=(pos+1)%order.length; render();}
 function prev(){if(!order.length)return; pos=(pos-1+order.length)%order.length; render();}
@@ -139,22 +277,44 @@ function toggleMulti(which){
  other.classList.remove('open'); me.classList.toggle('open');
 }
 
+function japaneseVoices(){
+ return (window.speechSynthesis?.getVoices?.()||[]).filter(v=>/^ja(-|_)/i.test(v.lang)||/Japanese|Kyoko|Otoya|Hattori|Nanami|Reo/i.test(v.name));
+}
+function voiceScore(v){
+ const n=(v.name||'').toLowerCase(); let s=0;
+ if(/^ja-jp$/i.test(v.lang||''))s+=40;
+ if(/premium|enhanced|natural|neural/.test(n))s+=120;
+ if(/kyoko|nanami|hattori|oto?ya|reo/.test(n))s+=45;
+ if(v.localService)s+=10;
+ return s;
+}
+function bestJapaneseVoice(){
+ const list=japaneseVoices();
+ if(preferredVoice!=='auto'){
+  const exact=list.find(v=>v.name===preferredVoice); if(exact)return exact;
+ }
+ return list.sort((a,b)=>voiceScore(b)-voiceScore(a))[0]||null;
+}
+function populateVoiceSelect(){
+ const sel=$('#voiceSelect'); if(!sel||!('speechSynthesis' in window))return;
+ const currentVal=preferredVoice; const list=japaneseVoices().sort((a,b)=>voiceScore(b)-voiceScore(a)||a.name.localeCompare(b.name));
+ sel.innerHTML='<option value="auto">อัตโนมัติ (เสียงญี่ปุ่นที่เป็นธรรมชาติที่สุด)</option>'+list.map(v=>`<option value="${esc(v.name)}">${esc(v.name)}${/premium|enhanced|natural|neural/i.test(v.name)?' ★':''}</option>`).join('');
+ sel.value=list.some(v=>v.name===currentVal)?currentVal:'auto';
+}
 function speakCurrent(){
  const c=current(); if(!c)return;
  if(!('speechSynthesis' in window)){toast('อุปกรณ์นี้ไม่รองรับเสียงอ่าน');return;}
  const text=String(c.reading||c.term||'').replace(/[／/]/g,'、');
  window.speechSynthesis.cancel();
  const u=new SpeechSynthesisUtterance(text);
- u.lang='ja-JP'; u.rate=0.82; u.pitch=1; u.volume=1;
- const voices=window.speechSynthesis.getVoices();
- const ja=voices.find(v=>/^ja(-|_)/i.test(v.lang))||voices.find(v=>/Japanese|Kyoko|Otoya/i.test(v.name));
- if(ja)u.voice=ja;
+ u.lang='ja-JP'; u.rate=speechRate; u.pitch=.98; u.volume=1;
+ const ja=bestJapaneseVoice(); if(ja)u.voice=ja;
  u.onerror=()=>toast('ไม่สามารถเล่นเสียงได้ กรุณาตรวจว่า iPhone มีเสียงภาษาญี่ปุ่น');
  window.speechSynthesis.speak(u);
 }
 function scheduleAutoSpeak(){
  clearTimeout(autoSpeakTimer);
- if(!autoAudio||!audioUnlocked)return;
+ if(!autoAudio||!audioUnlocked||studyMode!=='flash')return;
  autoSpeakTimer=setTimeout(()=>speakCurrent(),220);
 }
 function setAutoAudio(on, userAction=false){
@@ -166,11 +326,14 @@ function setAutoAudio(on, userAction=false){
 }
 function toast(msg){const t=$('#toast');if(!t)return;t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2400)}
 function showInstallHelp(){alert('วิธีใช้บน iPhone\n\n1. นำโฟลเดอร์นี้ขึ้นเว็บแบบ HTTPS (เช่น GitHub Pages / Netlify / Cloudflare Pages)\n2. เปิด URL ด้วย Safari\n3. แตะปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น)\n4. เลือก Add to Home Screen\n5. กด Add\n\nหมายเหตุ: การเปิดไฟล์ HTML โดยตรงจากแอป Files มักเปิดด้วย Quick Look ซึ่งไม่รัน JavaScript ครบ จึงควรเปิดผ่าน URL แบบ HTTPS');}
-function registerSW(){if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./service-worker.js?v=5', {updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{});}}
+function registerSW(){if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./service-worker.js?v=7', {updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{});}}
 
 function setup(){
  renderPageMulti(); renderGroupMulti();
  $('#autoAudio').checked=autoAudio; $('#autoAudio').onchange=e=>setAutoAudio(e.target.checked,true);
+ const rateSel=$('#rateSelect'); if(rateSel){rateSel.value=String(speechRate);rateSel.onchange=e=>{speechRate=parseFloat(e.target.value)||.96;try{localStorage.setItem(RATE_STORE,String(speechRate))}catch(err){};toast('ตั้งค่าความเร็วเสียงแล้ว');speakCurrent();};}
+ const voiceSel=$('#voiceSelect'); if(voiceSel){voiceSel.onchange=e=>{preferredVoice=e.target.value||'auto';try{localStorage.setItem(VOICE_STORE,preferredVoice)}catch(err){};toast('เปลี่ยนเสียงภาษาญี่ปุ่นแล้ว');speakCurrent();};}
+ if('speechSynthesis' in window){populateVoiceSelect();window.speechSynthesis.onvoiceschanged=populateVoiceSelect;}
  $('#pageToggle').onclick=e=>{e.stopPropagation();toggleMulti('#pageMulti')};
  $('#groupToggle').onclick=e=>{e.stopPropagation();toggleMulti('#groupMulti')};
  $('#pagePanel').onclick=e=>e.stopPropagation(); $('#groupPanel').onclick=e=>e.stopPropagation();
@@ -178,7 +341,9 @@ function setup(){
  document.querySelectorAll('.chip').forEach(x=>x.onclick=()=>{document.querySelectorAll('.chip').forEach(y=>y.classList.remove('active'));x.classList.add('active');mode=x.dataset.mode;pos=0;rebuild();});
  $('#search').oninput=e=>{q=e.target.value;pos=0;rebuild()};
  $('#flash').onclick=()=>$('#flash').classList.toggle('flipped'); $('#speakFrontBtn').onclick=e=>{e.stopPropagation();speakCurrent()}; $('#speakBtn').onclick=e=>{e.stopPropagation();speakCurrent()}; $('#knownBtn').onclick=()=>mark('known');$('#missedBtn').onclick=()=>mark('missed');$('#next').onclick=next;$('#prev').onclick=prev;$('#shuffle').onclick=shuffle;$('#reset').onclick=resetProgress;$('#export').onclick=exportProgress;$('#importFile').onchange=e=>e.target.files[0]&&importProgress(e.target.files[0]);
- document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next(); if(e.key==='ArrowLeft')prev(); if(e.key===' ')$('#flash').classList.toggle('flipped'); if(e.key==='1')mark('missed'); if(e.key==='2')mark('known');});
- $('#installHelp').onclick=showInstallHelp; if('speechSynthesis' in window){window.speechSynthesis.getVoices();} registerSW(); order=CARDS.map(c=>c.id);render();}
+ document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next(); if(e.key==='ArrowLeft')prev(); if(e.key===' '&&studyMode==='flash')$('#flash').classList.toggle('flipped'); if(e.key==='1')mark('missed'); if(e.key==='2')mark('known');});
+ document.querySelectorAll('.study-mode-btn').forEach(b=>b.onclick=()=>setStudyMode(b.dataset.studyMode));
+ $('#checkTyped').onclick=checkTypedAnswer; $('#furiganaInput').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();checkTypedAnswer();}}); $('#typeNext').onclick=next; $('#choiceNext').onclick=next;
+ $('#installHelp').onclick=showInstallHelp; if('speechSynthesis' in window){window.speechSynthesis.getVoices();populateVoiceSelect();} registerSW(); order=CARDS.map(c=>c.id);render();}
 setup();
 </script></body></html>
