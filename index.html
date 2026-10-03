@@ -166,7 +166,7 @@ function setAutoAudio(on, userAction=false){
 }
 function toast(msg){const t=$('#toast');if(!t)return;t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2400)}
 function showInstallHelp(){alert('วิธีใช้บน iPhone\n\n1. นำโฟลเดอร์นี้ขึ้นเว็บแบบ HTTPS (เช่น GitHub Pages / Netlify / Cloudflare Pages)\n2. เปิด URL ด้วย Safari\n3. แตะปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น)\n4. เลือก Add to Home Screen\n5. กด Add\n\nหมายเหตุ: การเปิดไฟล์ HTML โดยตรงจากแอป Files มักเปิดด้วย Quick Look ซึ่งไม่รัน JavaScript ครบ จึงควรเปิดผ่าน URL แบบ HTTPS');}
-function registerSW(){if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./service-worker.js').catch(()=>{});}}
+function registerSW(){if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./service-worker.js?v=5', {updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{});}}
 
 function setup(){
  renderPageMulti(); renderGroupMulti();
