@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <meta name="theme-color" content="#2e7d32"><title>JLPT N3 Kanji & Vocabulary Flashcards</title>
-<meta name="app-build" content="vocab-pos-filter-all-controls-fixed-20261003"><style>
+<meta name="app-build" content="vocab-clean-ui-settings-persist-20261003"><style>
 :root{--bg:#f5f7f5;--card:#fff;--text:#18211b;--muted:#68736b;--green:#2e7d32;--green2:#e8f5e9;--red:#c62828;--red2:#ffebee;--line:#dfe6df;--accent:#4caf50;--shadow:0 10px 30px rgba(23,48,28,.10)}
 *{box-sizing:border-box}html{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,"Leelawadee UI",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;min-height:100vh}.app{max-width:720px;margin:auto;padding:16px 14px 40px}.top{position:sticky;top:0;z-index:10;background:rgba(245,247,245,.94);backdrop-filter:blur(10px);padding:8px 0 12px}.title{font-size:1.25rem;font-weight:800;margin:2px 0 8px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;font-size:.78rem}.stat b{display:block;font-size:1.05rem}.progress{height:8px;background:#e3e9e3;border-radius:10px;overflow:hidden;margin-top:8px}.progress>div{height:100%;background:var(--accent);width:0;transition:.25s}.controls{display:grid;grid-template-columns:1fr 150px 170px;gap:8px;margin:12px 0 8px}.filter-label{font-size:.72rem;color:var(--muted);margin:0 0 3px 3px}.control-box{min-width:0}.search{width:100%;border:1px solid var(--line);background:white;border-radius:12px;padding:11px 12px;font-size:16px}.select,.btn{border:1px solid var(--line);background:white;border-radius:12px;padding:10px 12px;font-size:14px;color:var(--text)}
 .multi{position:relative}.multi-toggle{width:100%;min-height:42px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 34px 9px 11px;font-size:14px;color:var(--text);text-align:left;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.multi-toggle:after{content:"▾";position:absolute;right:11px;top:50%;transform:translateY(-50%);color:var(--muted)}.multi.open .multi-toggle:after{content:"▴"}.multi-panel{display:none;position:absolute;z-index:30;top:calc(100% + 5px);left:0;right:0;max-height:300px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.16);padding:8px}.multi.open .multi-panel{display:block}.multi-actions{display:flex;gap:6px;position:sticky;top:-8px;background:#fff;padding:4px 0 8px;z-index:1}.mini-btn{flex:1;border:1px solid var(--line);border-radius:9px;background:#f8faf8;padding:7px 5px;font-size:12px}.multi-option{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:9px;font-size:14px}.multi-option:hover{background:#f3f7f3}.multi-option input{width:18px;height:18px;accent-color:var(--green);flex:0 0 auto}.selection-note{font-size:.7rem;color:var(--muted);margin-top:3px;padding-left:3px}.row{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px}.chip{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px}.chip.active{background:#1f5f2a;color:#fff;border-color:#1f5f2a}.card-wrap{perspective:1200px;margin-top:8px}.card{height:340px;position:relative;transform-style:preserve-3d;transition:transform .35s;cursor:pointer}.card.flipped{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:26px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.back{transform:rotateY(180deg)}.term{font-size:clamp(2.3rem,10vw,4rem);font-weight:800;line-height:1.25;word-break:break-word}.hint{position:absolute;bottom:18px;color:var(--muted);font-size:.8rem}.reading{font-size:1.7rem;font-weight:700;margin-bottom:10px}.front .speak-btn{margin-top:18px}.speak-btn{border:1px solid var(--line);background:#f4f8f4;color:var(--text);border-radius:999px;padding:10px 16px;font-size:.95rem;font-weight:700;margin-bottom:12px;touch-action:manipulation}.speak-btn:active{transform:scale(.98)}.thai{font-size:1.2rem;line-height:1.55}.meta{margin-top:18px;color:var(--muted);font-size:.82rem}.status-badge{position:absolute;top:16px;right:16px;font-size:.78rem;padding:6px 9px;border-radius:999px;background:#f1f3f1;color:var(--muted)}.status-badge.known{background:var(--green2);color:var(--green)}.status-badge.missed{background:var(--red2);color:var(--red)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 10px}.action{border:0;border-radius:15px;padding:15px 10px;font-size:1rem;font-weight:800}.missed{background:var(--red2);color:var(--red)}.known{background:var(--green2);color:var(--green)}.nav{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center}.nav .btn:first-child{text-align:left}.nav .btn:last-child{text-align:right}.counter{text-align:center;color:var(--muted);font-size:.9rem;min-width:90px}.tools{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}.empty{background:white;border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);display:none}.foot{text-align:center;color:var(--muted);font-size:.78rem;margin-top:18px}.small{font-size:.78rem;color:var(--muted)}
@@ -161,6 +161,29 @@ body.vocab-mode .vocab-choice-settings.show{display:block}
   .actions .action{min-height:50px;padding:11px 8px;font-size:.9rem}
 }
 </style>
+
+<style id="clean-ui-settings-v1">
+/* Clean mobile-first UI: keep study screen calm, move configuration to a bottom sheet */
+.top{padding:7px 0 9px}.title{margin:0}.topbar-line{display:flex;align-items:center;gap:9px;margin-bottom:7px}.topbar-line .title{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.settings-open-btn{border:1px solid var(--line);background:#fff;border-radius:12px;min-height:42px;padding:8px 11px;font-weight:800;color:var(--text);box-shadow:0 2px 8px rgba(23,48,28,.06);white-space:nowrap}
+.deck-box{margin:5px 0!important;padding:7px!important}.deck-title{display:none!important}.deck-tabs{gap:6px!important}.deck-btn{min-height:40px!important;padding:8px 9px!important}
+.stats{gap:5px}.stat{padding:5px 4px;font-size:.68rem;border-radius:10px}.stat b{font-size:.92rem}.progress{height:5px;margin-top:5px}
+.settings-summary{display:flex;align-items:center;gap:6px;margin:7px 0 2px;min-width:0}.settings-summary-text{flex:1;min-width:0;color:var(--muted);font-size:.72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.settings-summary-badge{background:#edf6ee;color:#2e7d32;border:1px solid #d5ead8;border-radius:999px;padding:4px 8px;font-size:.68rem;font-weight:800;white-space:nowrap}
+/* Settings drawer */
+.settings-overlay{position:fixed;inset:0;background:rgba(18,25,20,.32);z-index:180;opacity:0;pointer-events:none;transition:opacity .2s}.settings-overlay.open{opacity:1;pointer-events:auto}
+.settings-sheet{position:fixed;left:0;right:0;bottom:0;z-index:181;margin:auto;max-width:760px;max-height:min(86dvh,760px);background:#f7f9f7;border-radius:24px 24px 0 0;box-shadow:0 -16px 42px rgba(0,0,0,.20);transform:translateY(105%);transition:transform .25s ease;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom)}
+.settings-sheet.open{transform:translateY(0)}.settings-sheet-head{display:flex;align-items:center;gap:10px;padding:12px 14px 9px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.92);border-radius:24px 24px 0 0;backdrop-filter:blur(10px)}.settings-sheet-title{flex:1;font-size:1rem;font-weight:900}.settings-close-btn{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#fff;font-size:1.2rem;color:var(--text)}
+.settings-scroll{overflow:auto;-webkit-overflow-scrolling:touch;padding:10px 12px 18px}.settings-section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px 11px;margin-bottom:9px}.settings-section-title{font-size:.8rem;font-weight:900;margin:0 0 7px}.settings-reset{width:100%;border:1px solid #eed7d7;background:#fff7f7;color:#9f2727;border-radius:12px;min-height:44px;font-weight:800;margin-top:4px}
+.settings-sheet .controls{margin:0;display:grid;grid-template-columns:1fr;gap:8px}.settings-sheet #posControl{margin:0}.settings-sheet .pos-box,.settings-sheet .layout-box,.settings-sheet .auto-audio,.settings-sheet .voice-settings{margin:0}.settings-sheet .layout-box{border:0;padding:0}.settings-sheet .layout-head{display:none}.settings-sheet .layout-panel{display:block!important;margin:0}.settings-sheet .voice-settings{grid-template-columns:1fr 1fr}.settings-sheet .row{padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:6px;overflow:visible}.settings-sheet .chip{white-space:normal;text-align:center;min-height:40px;padding:7px 8px}.settings-sheet .auto-audio{border:0;padding:5px 2px}.settings-sheet .voice-box{padding:8px}.settings-sheet .multi-panel{z-index:220}body:not(.vocab-mode) .pos-settings-section{display:none}
+/* Main study area spacing */
+.study-mode-box{margin:9px 0 7px;padding:8px}.study-mode-title{font-size:.75rem!important;margin-bottom:5px!important}.study-mode-btn{min-height:40px!important;padding:7px 6px!important;font-size:.78rem!important}.vocab-choice-settings{margin-top:7px!important;padding:8px!important}.quiz-help{margin-top:6px!important}
+.card-wrap{margin-top:5px}.tools{margin-top:10px}.iphone-help{display:none}.foot{margin-top:12px}
+/* prevent main page from showing moved settings before JS finishes */
+body:not(.clean-ready) .controls,body:not(.clean-ready) #posControl,body:not(.clean-ready) .auto-audio,body:not(.clean-ready) .voice-settings,body:not(.clean-ready) #layoutBox,body:not(.clean-ready) .row{visibility:hidden}
+@media(max-width:520px){
+ .app{padding-top:8px}.top{padding-top:4px}.topbar-line .title{font-size:1.08rem}.settings-open-btn{font-size:.78rem;padding:7px 9px}.settings-sheet{max-height:90dvh}.settings-scroll{padding:9px 10px 16px}.settings-sheet .voice-settings{grid-template-columns:1fr}.settings-sheet .multi-panel{position:fixed;left:10px;right:10px;bottom:calc(12px + env(safe-area-inset-bottom));top:auto;max-height:56dvh}.card{height:min(42dvh,325px)}
+}
+</style>
 </head><body><main class="app">
 <div class="top"><div class="title" id="appTitle">JLPT N3 Flashcards</div><div class="deck-box"><div class="deck-title">เลือกชุดการเรียน</div><div class="deck-tabs"><button type="button" class="deck-btn active" data-deck="kanji">漢字 Kanji</button><button type="button" class="deck-btn" data-deck="vocab">単語 คำศัพท์</button></div></div>
 <div id="layoutBox" class="layout-box"><div class="layout-head"><div><div class="layout-title">⚙️ เลือกข้อมูลบนหน้าแรก / หน้าหลัง</div><div class="layout-sub">เลือกได้หลายรายการ และตั้งค่าแยกสำหรับ Kanji กับคำศัพท์</div></div><button id="layoutToggle" type="button" class="layout-toggle">ตั้งค่า</button></div><div class="layout-panel"><div class="layout-grid"><div class="layout-side"><div class="layout-side-title">หน้าแรก</div><div class="layout-side-actions"><button type="button" class="layout-mini" data-layout-action="all" data-layout-target="front">เลือกทั้งหมด</button><button type="button" class="layout-mini" data-layout-action="clear" data-layout-target="front">ล้าง</button></div><label class="layout-opt"><input type="checkbox" data-layout-side="front" data-layout-field="term"> <span id="frontTermLabel">คันจิ/คำศัพท์</span></label><label class="layout-opt"><input type="checkbox" data-layout-side="front" data-layout-field="reading"> ฟุริกานะ</label><label class="layout-opt"><input type="checkbox" data-layout-side="front" data-layout-field="thai"> คำแปลไทย</label></div><div class="layout-side"><div class="layout-side-title">หน้าหลัง</div><div class="layout-side-actions"><button type="button" class="layout-mini" data-layout-action="all" data-layout-target="back">เลือกทั้งหมด</button><button type="button" class="layout-mini" data-layout-action="clear" data-layout-target="back">ล้าง</button></div><label class="layout-opt"><input type="checkbox" data-layout-side="back" data-layout-field="term"> <span id="backTermLabel">คันจิ/คำศัพท์</span></label><label class="layout-opt"><input type="checkbox" data-layout-side="back" data-layout-field="reading"> ฟุริกานะ</label><label class="layout-opt"><input type="checkbox" data-layout-side="back" data-layout-field="thai"> คำแปลไทย</label></div></div><div class="layout-note">อย่างน้อยต้องมี 1 รายการในแต่ละด้าน • การตั้งค่าจะถูกจำไว้ในเครื่องนี้</div></div></div>
@@ -276,7 +299,66 @@ const VOCAB_CHOICE_TYPE_STORE='jlpt_n3_vocab_choice_type_v1';
 const VOCAB_PROMPT_FIELDS_STORE='jlpt_n3_vocab_prompt_fields_v1';
 let vocabChoiceType=localStorage.getItem(VOCAB_CHOICE_TYPE_STORE)||'jp_to_thai';
 let vocabPromptFields=localStorage.getItem(VOCAB_PROMPT_FIELDS_STORE)||'both';
+
 let quizStats={typeCorrect:0,typeWrong:0,choiceCorrect:0,choiceWrong:0};
+const UI_SETTINGS_STORE='jlpt_n3_ui_settings_clean_v1';
+let uiSettings={kanji:{},vocab:{}};
+try{const x=JSON.parse(localStorage.getItem(UI_SETTINGS_STORE)||'null');if(x&&typeof x==='object')uiSettings={kanji:x.kanji||{},vocab:x.vocab||{}};}catch(e){}
+function currentUIState(){return {mode,q,pages:[...selectedPages],groups:[...selectedGroups],pos:[...selectedPOS],verbGroups:[...selectedVerbGroups],studyMode};}
+function saveUISettings(){
+ try{uiSettings[deckType]=currentUIState();localStorage.setItem(UI_SETTINGS_STORE,JSON.stringify(uiSettings));}catch(e){}
+ updateSettingsSummary();
+}
+function restoreUISettings(type=deckType){
+ const x=uiSettings[type]||{};
+ mode=['all','new','missed','known'].includes(x.mode)?x.mode:'all';
+ q=typeof x.q==='string'?x.q:'';
+ selectedPages=Array.isArray(x.pages)?x.pages.map(String):[];
+ selectedGroups=Array.isArray(x.groups)?x.groups:[];
+ selectedPOS=Array.isArray(x.pos)?x.pos:[];
+ selectedVerbGroups=Array.isArray(x.verbGroups)?x.verbGroups:[];
+ const sm=x.studyMode;
+ studyMode=['flash','type','choice'].includes(sm)?sm:'flash';
+ if(type==='vocab'&&studyMode==='type')studyMode='flash';
+}
+function applySavedUIToControls(){
+ const s=document.getElementById('search');if(s)s.value=q;
+ document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('active',x.dataset.mode===mode));
+ document.querySelectorAll('.study-mode-btn').forEach(x=>x.classList.toggle('active',x.dataset.studyMode===studyMode));
+}
+function resetStudySettings(){
+ mode='all';q='';selectedPages=[];selectedGroups=[];selectedPOS=[];selectedVerbGroups=[];studyMode='flash';pos=0;
+ uiSettings[deckType]={};try{localStorage.setItem(UI_SETTINGS_STORE,JSON.stringify(uiSettings));}catch(e){}
+ applySavedUIToControls();renderPageMulti();renderGroupMulti();renderPOSFilters();updateVocabChoiceSettings();rebuild();closeSettings();toast('รีเซ็ตตัวกรองและการตั้งค่าการฝึกแล้ว');
+}
+function activeFilterCount(){let n=0;if(q.trim())n++;if(mode!=='all')n++;if(selectedPages.length)n++;if(deckType==='kanji'&&selectedGroups.length)n++;if(deckType==='vocab'&&selectedPOS.length)n++;if(deckType==='vocab'&&selectedVerbGroups.length)n++;return n;}
+function updateSettingsSummary(){
+ const t=document.getElementById('settingsSummaryText'),b=document.getElementById('settingsSummaryBadge');if(!t||!b)return;
+ const parts=[];if(mode!=='all')parts.push(mode==='new'?'ยังไม่ทบทวน':mode==='missed'?'ยังจำไม่ได้':'จำได้แล้ว');if(selectedPages.length)parts.push(`หน้า ${selectedPages.length}`);if(deckType==='kanji'&&selectedGroups.length)parts.push(`กลุ่ม ${selectedGroups.length}`);if(deckType==='vocab'&&selectedPOS.length)parts.push(`ชนิดคำ ${selectedPOS.length}`);if(q.trim())parts.push(`ค้นหา: ${q}`);
+ t.textContent=parts.length?parts.join(' • '):'ไม่มีตัวกรองเพิ่มเติม';const n=activeFilterCount();b.textContent=n?`${n} ตัวกรอง`:'พร้อมฝึก';
+}
+function openSettings(){document.getElementById('settingsOverlay')?.classList.add('open');document.getElementById('settingsSheet')?.classList.add('open');document.body.style.overflow='hidden'}
+function closeSettings(){document.getElementById('settingsOverlay')?.classList.remove('open');document.getElementById('settingsSheet')?.classList.remove('open');document.body.style.overflow=''}
+function initCleanUI(){
+ const top=document.querySelector('.top'),title=document.getElementById('appTitle');
+ if(top&&title&&!document.getElementById('settingsOpen')){const line=document.createElement('div');line.className='topbar-line';title.parentNode.insertBefore(line,title);line.appendChild(title);const btn=document.createElement('button');btn.id='settingsOpen';btn.className='settings-open-btn';btn.type='button';btn.textContent='⚙️ ตั้งค่า';btn.onclick=openSettings;line.appendChild(btn);}
+ if(top&&!document.getElementById('settingsSummary')){const sum=document.createElement('div');sum.id='settingsSummary';sum.className='settings-summary';sum.innerHTML='<div id="settingsSummaryText" class="settings-summary-text">ไม่มีตัวกรองเพิ่มเติม</div><div id="settingsSummaryBadge" class="settings-summary-badge">พร้อมฝึก</div>';const stats=top.querySelector('.stats');if(stats)top.insertBefore(sum,stats);}
+ if(!document.getElementById('settingsSheet')){
+   const ov=document.createElement('div');ov.id='settingsOverlay';ov.className='settings-overlay';ov.onclick=closeSettings;document.body.appendChild(ov);
+   const sh=document.createElement('aside');sh.id='settingsSheet';sh.className='settings-sheet';sh.setAttribute('aria-label','การตั้งค่า');sh.innerHTML='<div class="settings-sheet-head"><div class="settings-sheet-title">⚙️ การตั้งค่าและตัวกรอง</div><button id="settingsClose" class="settings-close-btn" type="button">×</button></div><div id="settingsScroll" class="settings-scroll"></div>';document.body.appendChild(sh);sh.querySelector('#settingsClose').onclick=closeSettings;
+   const sc=sh.querySelector('#settingsScroll');
+   function sec(title,node){if(!node)return;const box=document.createElement('section');box.className='settings-section'+(node.id==='posControl'?' pos-settings-section':'');box.innerHTML=`<div class="settings-section-title">${title}</div>`;box.appendChild(node);sc.appendChild(box)}
+   sec('ค้นหาและกรองหน้า',document.querySelector('.controls'));
+   sec('สถานะการจำ',document.querySelector('body > main.app > .row'));
+   sec('ชนิดคำ',document.getElementById('posControl'));
+   sec('ข้อมูลบนหน้าแรก / หน้าหลัง',document.getElementById('layoutBox'));
+   const audioWrap=document.createElement('div');const aa=document.querySelector('.auto-audio'),vs=document.querySelector('.voice-settings');if(aa)audioWrap.appendChild(aa);if(vs)audioWrap.appendChild(vs);sec('เสียงอ่าน',audioWrap);
+   sec('จัดการข้อมูลและความคืบหน้า',document.querySelector('.tools'));
+   const reset=document.createElement('button');reset.type='button';reset.className='settings-reset';reset.textContent='รีเซ็ตตัวกรองและโหมดฝึก';reset.onclick=resetStudySettings;sc.appendChild(reset);
+ }
+ document.body.classList.add('clean-ready');updateSettingsSummary();
+}
+
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function save(){try{localStorage.setItem(STORE,JSON.stringify(status));}catch(e){toast('บันทึกในเครื่องไม่ได้ กรุณาเปิดผ่าน Safari/เว็บไซต์')}}
@@ -334,11 +416,12 @@ function renderPOSFilters(){
 }
 function updateVerbGroupVisibility(){const w=document.getElementById('verbGroupWrap');if(w)w.classList.toggle('show',deckType==='vocab'&&(!selectedPOS.length||selectedPOS.includes('Verb')));}
 function setDeck(type){
- if(!['kanji','vocab'].includes(type))return;
+ if(!['kanji','vocab'].includes(type)||type===deckType)return;
+ saveUISettings();
  deckType=type; CARDS=deckType==='vocab'?VOCAB_CARDS:KANJI_CARDS;
  try{localStorage.setItem(DECK_STORE,deckType)}catch(e){}
- selectedPages=[]; selectedGroups=[]; selectedPOS=[]; selectedVerbGroups=[]; pos=0; q=''; const s=$('#search'); if(s)s.value='';
- updateDeckUI(); updateLayoutUI(); renderPageMulti(); renderGroupMulti(); renderPOSFilters(); order=CARDS.map(c=>c.id); render();
+ pos=0;restoreUISettings(deckType);
+ updateDeckUI(); updateLayoutUI(); renderPageMulti(); renderGroupMulti(); renderPOSFilters();applySavedUIToControls();order=CARDS.map(c=>c.id);rebuild();saveUISettings();
 }
 function normalizeKana(v){
  return String(v||'').trim().normalize('NFKC').replace(/\s+/g,'').replace(/[・･]/g,'').replace(/[〜~～○]/g,'').replace(/\/+/g,'／').replace(/[ァ-ヶ]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0x60));
@@ -587,13 +670,16 @@ function setAutoAudio(on, userAction=false){
 }
 function toast(msg){const t=$('#toast');if(!t)return;t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2400)}
 function showInstallHelp(){alert('วิธีใช้บน iPhone\n\n1. นำโฟลเดอร์นี้ขึ้นเว็บแบบ HTTPS (เช่น GitHub Pages / Netlify / Cloudflare Pages)\n2. เปิด URL ด้วย Safari\n3. แตะปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น)\n4. เลือก Add to Home Screen\n5. กด Add\n\nหมายเหตุ: การเปิดไฟล์ HTML โดยตรงจากแอป Files มักเปิดด้วย Quick Look ซึ่งไม่รัน JavaScript ครบ จึงควรเปิดผ่าน URL แบบ HTTPS');}
-function registerSW(){if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./service-worker.js?v=kanji-vocab-20261003-controls-fixed-v2', {updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{});}}
+function registerSW(){if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./service-worker.js?v=kanji-vocab-20261003-clean-ui-v1', {updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{});}}
 
 function setup(){
+ restoreUISettings(deckType);
+ initCleanUI();
  updateDeckUI();
  renderPOSFilters();
  document.querySelectorAll('.deck-btn').forEach(b=>b.onclick=()=>setDeck(b.dataset.deck));
  renderPageMulti(); renderGroupMulti();
+ applySavedUIToControls();
  $('#autoAudio').checked=autoAudio; $('#autoAudio').onchange=e=>setAutoAudio(e.target.checked,true);
  const rateSel=$('#rateSelect'); if(rateSel){rateSel.value=String(speechRate);rateSel.onchange=e=>{speechRate=parseFloat(e.target.value)||.96;try{localStorage.setItem(RATE_STORE,String(speechRate))}catch(err){};toast('ตั้งค่าความเร็วเสียงแล้ว');speakCurrent();};}
  const voiceSel=$('#voiceSelect'); if(voiceSel){voiceSel.onchange=e=>{preferredVoice=e.target.value||'auto';try{localStorage.setItem(VOICE_STORE,preferredVoice)}catch(err){};toast('เปลี่ยนเสียงภาษาญี่ปุ่นแล้ว');speakCurrent();};}
@@ -615,6 +701,11 @@ function setup(){
  const vpf=$('#vocabPromptFields');if(vpf){vpf.value=vocabPromptFields;vpf.onchange=e=>{vocabPromptFields=e.target.value;try{localStorage.setItem(VOCAB_PROMPT_FIELDS_STORE,vocabPromptFields)}catch(_){};if(studyMode==='choice')render();};}
  updateVocabChoiceSettings();
  $('#checkTyped').onclick=checkTypedAnswer; $('#furiganaInput').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();checkTypedAnswer();}}); $('#typeNext').onclick=next; $('#choiceNext').onclick=next;
- $('#installHelp').onclick=showInstallHelp; if('speechSynthesis' in window){window.speechSynthesis.getVoices();populateVoiceSelect();} registerSW(); order=CARDS.map(c=>c.id);render();}
+ $('#installHelp').onclick=showInstallHelp; if('speechSynthesis' in window){window.speechSynthesis.getVoices();populateVoiceSelect();}
+ document.addEventListener('change',()=>setTimeout(saveUISettings,0));
+ document.addEventListener('input',e=>{if(e.target&&e.target.id==='search')setTimeout(saveUISettings,0)});
+ document.addEventListener('click',e=>{if(e.target.closest('.chip,.study-mode-btn,[data-page-action],[data-group-action],#posAll,#posClear,#verbAll,#verbClear'))setTimeout(saveUISettings,0)});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSettings()});
+ registerSW(); order=CARDS.map(c=>c.id);rebuild();saveUISettings();}
 setup();
 </script></body></html>
